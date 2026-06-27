@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Knewave&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+.bg-image {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-repeat: no-repeat;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  background-image: url(Bg.jpg);
+  background-size: cover;
+
+  filter: blur(5px);
+  transform: scale(1.05);
+}
+.container {
+  position: relative;
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
+.logo {
+  height: 55px;
+  width: 55px;
+  margin: 15px;
+}
+.nav {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  background: #030010;
+  display: flex;
+  color: antiquewhite;
+  justify-content: space-between;
+  z-index: 100;
+}
+ul {
+  display: inline-flex;
+  margin-right: 20px;
+  font-size: 1.05rem;
+}
+ul li {
+  margin: 15px 8px;
+}
+.home {
+  list-style: none;
+
+  height: 40px;
+  width: 60px;
+  background-color: #0a022c;
+  text-align: center;
+  padding-top: 8px;
+  border-radius: 5px;
+}
+.contact {
+  list-style: none;
+
+  height: 40px;
+  width: 90px;
+  background-color: #0a022c;
+  text-align: center;
+  padding-top: 8px;
+  border-radius: 5px;
+}
+.project {
+  list-style: none;
+
+  height: 40px;
+  width: 70px;
+  background-color: #0a022c;
+  text-align: center;
+  padding-top: 8px;
+
+  border-radius: 5px;
+}
+.name {
+  display: inline-block;
+}
+.branding {
+  display: flex;
+  align-items: center;
+  font-size: 1.05rem;
+}
+a {
+  text-decoration: none;
+  color: rgb(235, 231, 225);
+}
+main {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  gap: 12px;
+  padding-top: 80px;
+}
+.content-left {
+  height: 100vh;
+}
+.content-right {
+  height: 100vh;
+  
+}
+.dev {
+  position: relative;
+  top: 150px;
+  left: 110px;
+  height: 45vh;
+  width: 44vh;
+  
+}
+.me {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  margin: 15px 10px 8px 15px;
+  font-size: 2rem;
+  color: rgb(90, 89, 84);
+
+  font-family: "Love Ya Like A Sister", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.pic {
+  height: 25vh;
+  width: 25vh;
+  border-radius: 50%;
+}
+.desc {
+  color: rgb(139, 166, 218);
+  font-size: 2.2rem;
+  position: relative;
+  top: 3vh;
+  left: 28vh;
+  font-family: "Knewave", system-ui;
+  font-weight: 200;
+  font-style: normal;
+}
+#element {
+  font-size: larger;
+  color: rgb(199, 199, 190);
+}
+.skills {
+  color: aliceblue;
+  width: 80%;
+  margin: 58px auto;
+  background-color: #0a022c;
+  opacity: 50%;
+  padding: 10px;
+}
+.navigation{
+    display: none;
+}
+.skills h3 {
+  margin-bottom: 8px;
+}
+.stacks {
+  height: 60px;
+  width: 100%;
+}
+.stacks h4 {
+  color: rgb(115, 119, 109);
+}
+
+.hundred {
+  background-color: rgb(247, 247, 247);
+  width: 100%;
+  height: 5px;
+  border-radius: 50px;
+  
+}
+.nine7 {
+  width: 97%;
+  height: 5px;
+  background-color: rgb(247, 247, 247);
+  border-radius: 50px;
+}
+.nine5 {
+  border-radius: 50px;
+  width: 95%;
+  height: 5px;
+  background-color: rgb(247, 247, 247);
+}
+.ten {
+  border-radius: 50px;
+  width: 10%;
+  height: 5px;
+  background-color: rgb(247, 247, 247);
+}
+.one {
+  width: 1%;
+  border-radius: 50px;
+  height: 5px;
+  background-color: rgb(247, 247, 247);
+}
+
+@media (max-width:1225px) {
+    .bg-image{
+        height: 100%;
+  width: 100%;
+  position: fixed;
+  background-repeat: no-repeat;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  background-image: url(mountain.jpg);
+  background-size: cover;
+     filter: blur(10px);
+  transform: scale(1.05);   
+    }
+    .content-right{
+        display: none;
+    }
+    .me{
+        display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  
+  font-size: 1.5rem;
+  color: rgb(90, 89, 84);
+    }
+    main{
+        display: block;
+    }
+    .desc{
+      font-size: 1.3rem;
+  position: relative;
+  top: 1vh;
+  left: 10vh;   
+  text-align: center;
+    }
+    .pic{
+       height: 20vh;
+  width: 20vh;   
+    }
+}
+@media (max-width:525px) {
+    .pic{
+        height: 16vh;
+        width: 16vh;
+       margin-left: 10px;
+       margin-right: 10px;
+    }
+    .desc{
+       position: unset;
+    }
+
+}
+
+
